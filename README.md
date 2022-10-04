@@ -1,4 +1,20 @@
 # Stereo Matching Disparity
+## Table of Content
+- [**What is Stereo Matching**](#what-is-stereo-matching)
+- [**About the project**](#about-the-project )
+- [**Conventions**](#conventions)
+- [**Methods**](#methods)
+  - [**Pixel-wise Matching**](#pixel-wise-matching)
+    - [**Vectorization**](#vectorization)
+  - [**Window-based Matching**](#window-based-matching)
+    - [**Vectorization**](#vectorization-1)
+- [**Cost Function**](#cost-function)
+  - [**L1**](#l1)
+  - [**L2**](#l2)
+  - [**Cosine Similarity**](#cosine-similarity)
+  - [**Correlation Coefficient**](#correlation-coefficient)
+- [**Result**](#result)
+- [**Reference**](#reference)
 
 ## What is Stereo Matching
 Stereo Matching is one of the core technologies in computer vision, which recovers 3D structures of real world from 2D images. It has been widely used in areas such as autonomous driving, augmented reality and robotics navigation. Given a pair of rectified stereo images, the goal of Stereo Matching is to compute the disparity for each pixel in the reference image, where disparity is defined as the horizontal displacement between a pair of corresponding pixels in the left and right images.
@@ -8,19 +24,19 @@ Resource:
 ## About the project 
 In this project, I tried to use some simple methods (Pixel-wise Matching and Window-based Matching) to find the **Disparity Map** between 2 image - left image and right image with different focal length. In addition, I compared 2 function (vectorization and nonvectorization) to find the most efficient way. More and more, I used some cost function (L1, L2, Cosine Similarity, Correlation Coefficient) to solve some specific problems: different brigtness or contrast between 2 images.  
 ## Conventions
-L: the left image
+$L$: the left image
 <br>
-R: the right image
+$R$: the right image
 <br>
-p: is position in image $[x_p, y_p]$
+$p$: is position in image $[x_p, y_p]$
 <br>
-L(p): the (vector) value of p
+$L(p)$: the (vector) value of p
 <br>
-D: disparity range
+$D$: disparity range
 <br>
-d: value in disparity range $[0, D]$
+$d$: value in disparity range $[0, D]$
 <br>
-W: image width
+$W$: image width
 ## Methods
 ### Pixel-wise Matching 
 Each pixel in the map is in an interval [0, D], where D is disparity range.
