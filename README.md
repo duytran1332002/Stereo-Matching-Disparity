@@ -96,3 +96,21 @@ $$ r = \frac{n\sum_{i} x_i y_i - (\sum_i x_i)(\sum_i y_i)}{\sqrt{\sum_{i = 1} x_
 <br>
 
 $d = argmax_{d \in D} \(C_1\(p, d\)\)$
+
+## Result
+- Disparity range: 64
+- Kernel_size: 10
+
+| Methods | L1 | L2 |
+| --------------------------------- | :---: | :---: |
+| Pixel-wise Matching Vectorization| 9.1s | 42s |
+| Pixel-wise Matching Non-vectorization | 0.3s | 0.3s |
+| Window-based Matching Vectorization | 24s | 92s |
+| Window-based Matching Non-vectorization | 0.2s | 0.7s |
+
+![Ảnh1](https://user-images.githubusercontent.com/78312815/193783819-0a9c3b73-22ed-4453-831a-5d34988481ea.png)
+
+![Ảnh2](https://user-images.githubusercontent.com/78312815/193784447-8dc9c81b-f1b7-49fa-8531-d045be4cac8e.png)
+
+## Reference
+[AI Viet Nam](https://www.facebook.com/aivietnam.edu.vn)
