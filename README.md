@@ -119,10 +119,10 @@ $d = argmax_{d \in D} \(C_1\(p, d\)\)$
 
 | Methods | L1 | L2 |
 | --------------------------------- | :---: | :---: |
-| Pixel-wise Matching Vectorization| 9.1s | 42s |
-| Pixel-wise Matching Non-vectorization | 0.3s | 0.3s |
-| Window-based Matching Vectorization | 24s | 92s |
-| Window-based Matching Non-vectorization | 0.2s | 0.7s |
+| Pixel-wise Matching Non-Vectorization| 9.1s | 42s |
+| Pixel-wise Matching Vectorization | 0.3s | 0.3s |
+| Window-based Matching Non-vectorization | 24s | 92s |
+| Window-based Matching Vectorization | 0.2s | 0.7s |
 
 ![Ảnh1](https://user-images.githubusercontent.com/78312815/193783819-0a9c3b73-22ed-4453-831a-5d34988481ea.png)
 
