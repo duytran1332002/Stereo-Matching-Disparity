@@ -22,7 +22,7 @@ Stereo Matching is one of the core technologies in computer vision, which recove
 Resource: 
 <a href="https://arxiv.org/abs/1909.03751">Adaptive Unimodal Cost Volume Filtering for Deep Stereo Matching </a>
 ## About the project 
-In this project, I tried to use some simple methods (Pixel-wise Matching and Window-based Matching) to find the **Disparity Map** between 2 image - left image and right image with different focal length. In addition, I compared 2 function (vectorization and nonvectorization) to find the most efficient way. More and more, I used some cost functions (L1, L2, Cosine Similarity, Correlation Coefficient) to solve some specific problems: different brigtness or contrast between 2 images.  
+In this project, I tried to use some simple methods (Pixel-wise Matching and Window-based Matching) to find the Disparity Map between 2 images - a left image and the right image with different focal lengths. In addition, I compared 2 functions (vectorization and non-vectorization) to find the most efficient way. More and more, I used some cost functions (L1, L2, Cosine Similarity, Correlation Coefficient) to solve some specific problems: different brightness or a contrast between 2 images.
 ## Conventions
 $L$: the left image
 <br>
